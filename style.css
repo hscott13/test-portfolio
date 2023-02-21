@@ -41,12 +41,45 @@ p {
   top: 0px;
   width: 100%;
 }
+.row {
+  margin-bottom: 2em;
+}
 .container h2 {
   text-align: start;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+  .container a {
+    display: flex;
+    justify-content: center;
+  }
+  .row {
+    margin-bottom: 0;
+  }
+  .container img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .about-paragraphs {
+    font-size: 12px;
+  }
+}
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin-top: 2em;
   justify-content: center;
 }
 
@@ -79,11 +112,8 @@ p {
 
 .about-paragraphs {
   display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
+  margin: 10px 1em;
+  justify-content: center;
 }
 
 .email-link {
